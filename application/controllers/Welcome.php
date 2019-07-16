@@ -20,6 +20,19 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		$data['addressbook'] = array('Libro 1', 'Avengers','Steve Jobs','Elon Musk');
+		$this->load->view('welcome_message',$data);
+	}
+
+	// Show the Basic Template
+	public function template(){
+		$data = array();
+
+		$this->load->view('template/index',$data);
+	}
+	
+	// TODO: create a form
+	public function create(){
+
 	}
 }

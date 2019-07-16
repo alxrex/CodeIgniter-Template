@@ -83,6 +83,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</div>
 
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
+
+	<p>
+		<a href="welcome/template">Go to Template</a>
+	</p>
+
+	<p>
+		<?php
+		//echo base_url('');
+		?>
+	</p>
+	
+	<p>
+		<ul>
+<?php foreach ($addressbook as $name):?>
+        <li><?=$name?></li>
+<?php endforeach; ?>
+</ul>
+	</p>
+
 </div>
 
 </body>
