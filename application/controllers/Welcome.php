@@ -25,14 +25,30 @@ class Welcome extends CI_Controller {
 	}
 
 	// Show the Basic Template
-	public function template(){
+	public function template() {
 		$data = array();
 
 		$this->load->view('template/index',$data);
 	}
 	
 	// TODO: create a form
-	public function create(){
+	public function create() {
 
+	}
+
+	public function get() {
+
+	}
+
+	public function getAll() {
+
+	}
+
+	public function update() {
+
+	}
+
+	public function delete() {
+		
 	}
 }
